@@ -30,7 +30,7 @@
                                             </button>
                                         </div>
                                     <div class="modal-body">
-                                        <ul class="list-group list-group-flush container text-left ">
+                                        <ul class="list-group list-group-flush container text-left">
                                             <li class="list-group-item">Name: {{pokemonDetails.name}}</li>
                                             <li class="list-group-item">Weight: {{pokemonDetails.weight}}</li>
                                             <li class="list-group-item">Height: {{pokemonDetails.height}}</li>
@@ -44,9 +44,7 @@
                                         </ul>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default mr-auto" ref="copy" @click.stop.prevent="clipBoard">
-                                            Share to my friends
-                                        </button>
+                                        <button type="button" class="btn btn-default mr-auto">Share to my friends</button>
                                         <span class="favorite-cursor"  @click="addFavorite(pokemon, index)">
                                             <font-awesome-icon :class="pokemon.favorite" icon="star" />
                                         </span>
@@ -117,24 +115,6 @@ export default {
                 }
             }
             
-        },
-
-        clipBoard() {
-          let testingCodeToCopy = document.querySelector('#testing-code')
-          
-          testingCodeToCopy.select()
-
-          try {
-            var successful = document.execCommand('copy');
-            var msg = successful ? 'successful' : 'unsuccessful';
-            alert('Testing code was copied ' + msg);
-          } catch (err) {
-            alert('Oops, unable to copy');
-          }
-
-          /* unselect the range */
-          testingCodeToCopy.setAttribute('type', 'hidden')
-          window.getSelection().removeAllRanges()
         }
     },
 
