@@ -1,32 +1,52 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div>
+    </div> -->
     <router-view/>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+  #app {
+    /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+  }
 
-#nav {
-  padding: 30px;
-}
+  body {
+    background-color: #F9F9F9 !important;
+    font-family: Lato !important;
+  }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  .btn-default {
+    background-color: #F22539;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(217, 83, 78, 0.75);
+    border-radius: 60px !important;
+    transition: all 0.3s ease 0s;
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  .btn-default:active {
+    color: #FFF;
+    background: #C00E20;
+  }
+
+  .btn-default.disabled {
+    background-color: #BFBFBF !important;
+  }
+
+  .div-size {
+    width: 700px;
+  }
+
+  .favorite-cursor {
+    cursor: pointer;
+  }
+
 </style>
