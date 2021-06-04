@@ -214,13 +214,13 @@ export default {
         .active-button {
             left: 8%;
             right: 50.87%;
-            width: 230px;
+            width: 180px;
         }
 
         .disabled-button {
             left: 50.87%;
             right: 25.26%;
-            width: 230px;
+            width: 180px;
         }
 
         .svg-inline--fa.fa-w-16 {
@@ -249,15 +249,15 @@ export default {
     /* Medium devices (tablets, 768px and up) */
     @media (min-width: 768px) { 
         .active-button {
-            left: 15%;
+            left: 26%;
             right: 50%;
-            width: 275px;
+            width: 200px;
         }
 
         .disabled-button {
             left: 53%;
             right: 25.26%;
-            width: 275px;
+            width: 200px;
         }
 
         .svg-inline--fa.fa-w-16 {
@@ -286,16 +286,16 @@ export default {
     /* Large devices (desktops, 992px and up) */
     @media (min-width: 992px) { 
         .active-button {
-            left: 13%;
+            left: 18%;
             right: 50.87%;
-            width: 275px;
+            width: 220px;
             margin: 18px 0 18px 100px;
         }
 
         .disabled-button {
             left: 42.5%;
             right: 25.26%;
-            width: 275px;
+            width: 220px;
             margin: 18px 0 18px 100px;
         }
 
@@ -311,16 +311,16 @@ export default {
     /* Extra large devices (large desktops, 1200px and up) */
     @media (min-width: 1200px) { 
         .active-button {
-            left: 13%;
+            left: 26%;
             right: 50.87%;
-            width: 275px;
+            width: 230px;
             margin: 18px 0 18px 100px;
         }
 
         .disabled-button {
-            left: 42.5%;
+            left: 45.5%;
             right: 25.26%;
-            width: 275px;
+            width: 230px;
             margin: 18px 0 18px 100px;
         }
 
